@@ -1,0 +1,431 @@
+
+#Meniu
+{
+margin-top: 80px;
+list-style-type: none;
+padding:0;
+overflow: hidden;
+width: 1900;
+height: 40px;
+position: fixed;
+ top: 0;
+width: 100%;
+}
+li.Meniu{
+   float: left; 
+   margin-bottom: 10px;
+}
+a.Meniu
+{
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: black;
+    border-right: 1px solid white;
+}
+#titlu
+{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+a:hover
+{
+background-color: darksalmon;
+}
+div{
+    margin: 0 auto;
+}
+#Despre
+{
+    position: absolute;
+    right:190px;
+    left:-30px;
+    margin:10px;
+}
+#Istorie
+{
+    position: absolute;
+    right:560px;
+    left:120px;
+    margin:10px;
+}
+#Obiective
+{
+    position: absolute;
+    right:930;
+    left:270px;
+    margin:10px;
+    width: 150px;
+}
+#Cazare
+{
+    position:absolute;
+    right:1300px;
+    width:120px;
+    left:490px;
+    margin:10px;
+}
+
+@keyframes imagine{
+    from{opacity:1%;};
+    to{opacity:20%;}
+}
+#Cluj
+{
+    position: absolute;
+    top:240px;
+   
+    width:1350px;
+    height: 360px;
+    animation-name: imagine;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+#Map
+{
+    position: fixed;
+    margin-top: 80px;
+    right:150px;
+    left:1290px;
+    border:none;
+    width:20px;
+    margin-left:10px;
+    
+}
+#Weather
+{
+ 
+    position: fixed;
+    margin-top: 80px;
+    right:150px;
+    left:1240px;
+    border:none;
+    width:20px;
+    margin-left:10px;
+    
+}
+@keyframes appereance
+{
+    from{opacity:5%;};
+    to{opacity:20%;};
+}
+#Quote
+{
+    animation-name:appereance;
+    animation-duration:4s;
+    position: absolute;
+    top:150px;
+    right: 30px;
+    left:20px;
+    font-size:25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Content
+{
+    position: fixed;
+    width:1350px;
+    top:140px;
+    height:490px;
+    overflow:auto;
+}
+#P1
+{
+    position: absolute;
+    top:20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 900px;
+    height: 250px;
+    text-align: justify;
+    text-indent: 20px;
+
+}
+#Cluj1
+{
+    position: absolute;
+    top:20px;
+    width:400px;
+    right:900px;
+    left:940px;
+    height: 200px;
+}
+#Cluj2
+{
+    position: absolute;
+    top:220px;
+    width:400px;
+}
+#P2
+{
+position: absolute;
+top:220px;
+right: 20px;
+left:420px;
+font-size: 20px;
+width:900px ;
+font-family: 'Times New Roman', Times, serif;
+text-align: justify;
+text-indent: 20px;
+}
+#P3{
+    position: absolute;
+    top:390px;
+    right:30px;
+    left:10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width:1300px;
+    text-align: justify;
+    text-indent: 20px;
+}
+#P4Istorie
+{
+    position: absolute;
+    top:1050px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    right: 30px;
+    left:10px;
+    width: 1300px;
+    text-indent: 20px;
+    text-align: justify;
+}
+#P1Istorie
+{
+    position: absolute;
+    top:20px;
+    right:30px;
+    left:10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width:1300px;
+    text-align: justify;
+    text-indent: 20px;
+}
+#cetatuie
+{
+    position: absolute;
+    top:240%;
+    width: 600px;
+    height: 400px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.Poza_Patrimoniu
+{
+    position: absolute;
+    top:70%;
+    height: 320px;
+    left:50%;
+    width:800px;
+    transform: translate(-50%,-50%);
+    bottom: 10px;
+}
+#P2Istorie
+{
+    position: absolute;
+    top:100%;
+    font-size: 20px;
+    text-align: justify;
+    text-indent:20px;
+}
+#P3Istorie
+{
+    position: absolute;
+    top:115%;
+    font-size:20px;
+    text-indent: 20px;
+    text-align: justify;
+    bottom: -10px;
+}
+#Img_Cluj_History
+{
+    position: absolute;
+    top:145%;
+    left:50%;
+    transform: translate(-50%);
+    height: 350px;
+}
+#SlideShow-Gallery
+{
+    position: relative;
+   margin: auto;
+   max-width: 1200px;
+   height: 200px;
+
+}
+
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-weight: 100;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+
+}
+.Obiective
+{
+    display: none;
+}
+.next {
+    position: absolute;
+    right: 30px;
+    border-radius: 3px 0 0 3px;
+  }
+.prev:hover, .next:hover
+{
+    background-color:white;
+
+}
+
+@keyframes Fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.Fade {
+     animation-name: Fade;
+    animation-duration: 1.5s;
+  }
+  
+.img
+{
+    position: absolute;
+    top:40%;
+    right:45%;
+    height: 350px;
+    width: 650px;
+}
+.TextTop
+{
+    position: absolute;
+    top:10%;
+    right:50%;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.Text_Bottom
+{
+    position: absolute;
+    right: 4%;
+    top:36%;
+    width:470px;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Pensiunea_Gaby
+{
+    position: absolute;
+    top:15%;
+    width: 650px;
+    height: 300px;
+}
+#Pensiune-Gaby-Titlu
+{
+    position: absolute;
+    top:5%;
+    right: 35.5%;
+    font-size: 23px;
+}
+#Descriere_Pensiune_Gaby
+{
+    position: absolute;
+    top:19%;
+    right:2%;
+    width:600px;
+    font-size: 20px;
+    text-indent: 20px;
+    text-align: justify;
+}
+#Hotel-Sunny-Hill
+{
+    position: absolute;
+    top:85%;
+    width: 650px;
+    height: 250px;
+
+}
+#Guest-House
+{
+    position: absolute;
+    top:155%;
+    width:650px;
+    height: 300px;
+    
+}
+#Hotel_Sunny_Titlu
+{
+    position: absolute;
+    top:75%;
+    font-size: 23px;
+    right: 33.5%;
+}
+#Descriere_Hotel_Sunny
+{
+    position: absolute;
+    top:88%;
+    font-size: 20px;
+    width: 600px;
+    right: 2%;
+    text-align: justify;
+    text-indent: 20px;
+}
+#Guest_House-Titlu
+{
+    position: absolute;
+    top:146%;
+    font-size: 23px;
+    right: 37.5%;
+}
+#Descriere_Guest_House
+{
+    position: absolute;
+    top:160%;
+    font-size: 20px;
+    width: 600px;
+    right: 2%;
+    text-indent: 20px;
+    text-align: justify;
+
+}
+#Hotel-River-Park
+{
+    position: absolute;
+    top:250%;
+    width: 650px;
+}
+#Hotel-River-Park-Titlu
+{
+    position: absolute;
+    top:240%;
+    right: 33%;
+    font-size: 23px;
+}
+#Descriere-Hotel-River-Park
+{
+    position: absolute;
+    top:255%;
+    right:2%;
+    text-indent: 20px;
+    font-size: 20px;
+    text-align: justify;
+    width: 600px;
+}
